@@ -6,7 +6,7 @@ import TokenDetail from './TokenDetail';
 export default function MediaCard({ token }) {
   const { image, name, description, collectionInfo } = token;
   const [show, setShow] = React.useState(false);
-  const imageSrc = (image ?? '').replace('ipfs://', 'https://fenneckit.infura-ipfs.io/ipfs/');
+  const imageSrc = (image ?? '').replace('ipfs://', 'https://gateway.ipfs.io/ipfs/');
 
   return (
     <>

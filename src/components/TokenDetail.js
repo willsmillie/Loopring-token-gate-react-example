@@ -292,7 +292,7 @@ const TokenEmbed = ({ token }) => {
   const { image, name, animation_url, contentType } = token;
   const imageSrc = (animation_url ?? image ?? "").replace(
     "ipfs://",
-    "https://fenneckit.infura-ipfs.io/ipfs/"
+    "https://gateway.ipfs.io/ipfs/"
   );
 
   const Content = () => {
