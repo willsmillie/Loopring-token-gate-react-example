@@ -1,36 +1,6 @@
 // This data may be retrieved by using NFT Tool Kit: https://nfttoolk.it
 
-export const tokens = {
-  "0x35c672c508c10524e33e41b5d0b9d9b3570f5ef49881e4c214dd2fd89e061eb1": {
-    nftId: "0x35c672c508c10524e33e41b5d0b9d9b3570f5ef49881e4c214dd2fd89e061eb1",
-    image: "ipfs://QmcqQ8oBaMQiqErzCZgazteRw8Abkdcrm2KfNCDDq75joi",
-    animation_url: "ipfs://QmaB2KiSF8SnzWxL2fEVKWuqxpcgtncdBJ64xXbvucruYF",
-    collection_metadata:
-      "https://api.nft.gamestop.com/getCollectionMetadata?collectionId=4a6202f3-a2cb-4f92-99e5-8668a8208f4c",
-    name: "Winter 2023 | AV Field Trip",
-    description:
-      "Winter has arrived in Upstate New York. The days are short, and the skies often dark. A good dusting, or the occasional snow storm tends to lend reprieve; covering the humble shades of dormant browns and grays which sprawl across the land. \n\nPatch notes:\n- Guitar with chorus & delay\n- Noodling on analog synth & electric piano, reversed & pitched\n- Modular synth sequencing drums\n\n(Reminted due to encoding problems)",
-    attributes: [
-      {
-        value: "Ambient",
-        trait_type: "Genre",
-      },
-      {
-        value: "4:45",
-        trait_type: "Length",
-      },
-      {
-        value: "Guitar, Synth",
-        trait_type: "Instruments",
-      },
-    ],
-    royalty_percentage: 5,
-    properties: {
-      Instruments: "Guitar, Synth",
-      Length: "4:45",
-      Genre: "Ambient",
-    },
-  },
+export const GatedTokens = {
   "0x35c672c508c10524e33e41b5d0b9d9b3570f5ef49881e4c214dd2fd89e061eb1": {
     name: "Winter 2023 | AV Field Trip",
     description:
@@ -451,8 +421,4 @@ export const tokens = {
       },
     },
   },
-};
-
-export default {
-  tokens,
 };

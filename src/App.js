@@ -1,6 +1,4 @@
 import ThemeProvider from "./theme";
-import logo from "./logo.svg";
-import { Button } from "@mui/material";
 import Assets from "./pages/Assets";
 import "./App.css";
 

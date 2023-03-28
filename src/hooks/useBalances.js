@@ -15,7 +15,6 @@ export function useBalances() {
       if (library?.provider && account) {
         const web3 = new Web3(library?.provider);
         const { apiKey, accountId } = await authenticate(account, web3);
-        console.log("key, id: ", apiKey, accountId);
 
         const balances = await getBalances({ apiKey, accountId, web3 });
         const results = (balances.userNFTBalances ?? []).map((e) => e.nftId);
@@ -27,7 +26,7 @@ export function useBalances() {
     return () => {
       // this now gets called when the component unmounts
     };
-  }, [account]);
+  }, [account, library]);
 
   return balances;
 }

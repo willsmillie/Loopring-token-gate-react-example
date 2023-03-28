@@ -2,19 +2,18 @@
 import { Container, Typography, Grid, Stack } from "@mui/material";
 // @web3-react
 import { useWeb3React } from "@web3-react/core";
-import { authenticate, getBalances } from "../utils/web3";
 
 // components
 import ConnectPopover from "../components/ConnectPopover";
 import TokenCard from "../components/TokenCard";
-import TokenGate from "../data";
+import { GatedTokens } from "../data";
 import { useBalances } from "../hooks/useBalances";
 
 export default function PageOne() {
   const { active } = useWeb3React();
 
   // sort the tokens by date
-  const tokens = Object.values(TokenGate.tokens).sort(
+  const tokens = Object.values(GatedTokens).sort(
     (a, b) => a.updatedAt > b.updatedAt
   );
 
